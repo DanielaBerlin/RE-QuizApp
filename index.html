@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="quiz-box">
+        <div id="quiz">
+          <h1>💻 REQUIREMENTS ENGINEERING PRINCIPLES QUIZ APP 🧐</h1>
+          <div class="quiz-header">
+            <p id="progress">Question x of y</p>
+            <p id="count-down">30</p>
+          </div>
+          <p id="question"></p>
+          <div class="buttons">
+            <button class="btn" id="btn0">A. <span id="choice0"></span></button>
+            <button class="btn" id="btn1">B. <span id="choice1"></span></button>
+            <button class="btn" id="btn2">C. <span id="choice2"></span></button>
+            <button class="btn" id="btn3">D. <span id="choice3"></span></button>
+            <h2>The right answer is:</h2>
+            <p type="text" class="right-answer" id="right-answer"></p>
+          </div>
+          <button class="btn" id="btn-next" onclick="nextQuestion()">
+            Next Question
+          </button>
+          <hr />
+          <footer>
+            <p>🐶Fenix y Rocko🐶</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
